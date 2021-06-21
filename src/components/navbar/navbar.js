@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import CartWidget from '../cartWidget/cartWidget'
 import './style.css'
 
@@ -31,10 +30,10 @@ export default function NavBar() {
           
           <div className= 'condition-list'>
             <p variant="h6" className={classes.title}>
-              Nuevo
+              NUEVO
             </p>
             <p variant="h6" className={classes.title}>
-              Usado
+              USADO
             </p>
           </div>
           

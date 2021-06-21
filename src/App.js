@@ -1,17 +1,19 @@
 import './App.css';
 import NavBar from './components/navbar/navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemCountContainer from './containers/itemCountContainer/itemCountContainer'
+
 
 function App() {
-
-  const greeting = 'Bienvenido a OPENMARKET!!'
-
 
 
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting = {greeting} />
+      <ItemListContainer />
+      <ItemCountContainer />
+    
+
     </div>
   );
 }
