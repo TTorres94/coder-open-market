@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import './itemCountContainer.css'
-import Counter from '../../components/counter/counter'
+import './itemCount.css'
+
 
 export default function ItemCountContainer(props) {
     const [initialNumber, setNumber] = useState (1);
@@ -11,25 +11,23 @@ export default function ItemCountContainer(props) {
         if(initialNumber < stock){
             setNumber(initialNumber + 1) 
         }
-        
     }
 
-    function decrement () {
-        if(initialNumber >= 2){
-            setNumber(initialNumber - 1)
-        }
-    }
+   
 
     function onAdd(){
         console.log(initialNumber)
-
-        
     }
 
 
     return(
-        <div className='counterContainer'>
-            <Counter incrementar={increment} decrementar={decrement} number={initialNumber} onAdd={onAdd} />
+        <div className='counter__buttons'>
+          <h1>{initialNumber}</h1>
+          <button onClick={increment}>+</button>
+          <div>
+          <button onClick={onAdd}>Agregar al carrito</button>
         </div>
+        </div>
+        
     )
 }
