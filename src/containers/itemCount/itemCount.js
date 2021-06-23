@@ -24,9 +24,9 @@ export default function ItemCountContainer(props) {
         <div className='counter__buttons'>
           <h1>{initialNumber}</h1>
           <button onClick={increment}>+</button>
-          <div>
-          <button onClick={onAdd}>Agregar al carrito</button>
-        </div>
+            <div>
+                <button onClick={onAdd}>Agregar al carrito</button>
+            </div>
         </div>
         
     )
