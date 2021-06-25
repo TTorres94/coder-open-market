@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import ItemCount from '../itemCount/itemCount'
 
 const useStyles = makeStyles({
   root: {
@@ -17,6 +18,18 @@ const useStyles = makeStyles({
 
 export default function Item( {item}) {
   const classes = useStyles();
+
+
+  const initial = 1;
+  const stock = 5;
+  
+
+
+  function onAdd(){
+      console.log('se ejecuto onAdd!')
+  }
+
+
 
   return (
     <Card className={classes.root}>
@@ -35,6 +48,7 @@ export default function Item( {item}) {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <ItemCount onAdd = {onAdd} initial = {initial} stock = {stock} />
     </Card>
   );
 }

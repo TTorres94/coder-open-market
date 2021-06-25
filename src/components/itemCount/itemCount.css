@@ -1,0 +1,24 @@
+.count-container{
+    background-color:darkcyan;
+    width:400px;
+    height:100px;
+    margin:auto;
+}
+
+.counter__buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.counter__buttons h1 {
+    width:0;
+} 
+
+.counter__buttons button{
+    background-color:#46BB99;
+    border-radius:10px;
+    border-color:#232937;
+    margin-bottom:2px;
+}

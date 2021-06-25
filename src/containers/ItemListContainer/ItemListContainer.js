@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './ItemListcontainer.css'
-import ItemList from '../itemList/itemList'
-//import ItemCount from '../itemCount/itemCount'
+import ItemList from '../../components/itemList/itemList'
+
 
 export default function ItemListContainer(props) {
 
