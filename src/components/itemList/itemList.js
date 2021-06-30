@@ -1,5 +1,5 @@
 import React from 'react'
-import Item from '../../components/item/item'
+import Item from '../item/item'
 import './itemList.css'
 
 export default function ItemList( {item} ) {

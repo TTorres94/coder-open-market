@@ -30,18 +30,21 @@ export default function Item( {item}) {
   }
 
 
-
   return (
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={item.image}
           title="Contemplative Reptile"
+          style={{}}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {item.title}
+          </Typography>
+          <Typography gutterBottom variant="h6" component="h2">
+            Precio: ${item.precio}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {item.description}
